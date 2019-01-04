@@ -7515,7 +7515,10 @@ body {
 .sidebar .nav-link {
   font-weight: 500;
   color: #2C3E50;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 2rem; }
+
+.sidebar .nav-link:hover {
+  color: #18BC9C; }
 
 /*
  * Content
@@ -7531,10 +7534,7 @@ body {
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  font-size: 1rem; }
-
-.sidebar .nav-link .feather {
-  margin-right: 4px;
-  color: #999; }
+  padding-left: 2rem;
+  font-size: 1.15rem; }
 
 /*# sourceMappingURL=styles.css.map */
