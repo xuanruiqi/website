@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Xuanrui Qi">
+    <title>Xuanrui Qi</title>
+
+
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap p-0">
+        <a class="navbar-brand col-md-2 col-lg-2 mr-0" href="#">Xuanrui Qi</a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 col-lg-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#intro">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recent">Recent Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#research">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#papers">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personal">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <hr>
+                        </li>
+                    </ul>
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://blog.xuanruiqi.com">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/xuanruiqi">Code (GitHub)</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main role="main" class="col-md-8 ml-sm-auto col-lg-9 px-4">
+                <div class="justify-content-between align-items-center pt-4 border-bottom" id="intro">
+                    <h2>Xuanrui (Ray) Qi</h2>
+                    <p>
+                        I am a master's student in <a href="https://engineering.tufts.edu/cs/">computer science</a> at
+                        <a href="https://www.tufts.edu">Tufts University</a>, studying programming languages
+                        and type theory as part of the <a href="https://tupl.cs.tufts.edu">TuPL research group</a>.
+                        I am officially advised by <a href="https://www.cs.tufts.edu/~sguyer/">Professor Samuel Guyer</a>,
+                        and informally advised by <a href="https://people.cs.uchicago.edu/~comar/">Cyrus Omar</a>
+                        (University of Chicago) on my research project, in which I am designing a dependently-typed programming language with
+                        first-class typed holes. I expect to receive my M.S. degree in May 2019, and start a PhD in computer
+                        science in the fall of 2019.
+                    </p>
+                    <p>
+                        Before I started graduate school, I visited and did research at the <a href="https://www.math.nagoya-u.ac.jp/">Graduate
+                        School of Mathematics, Nagoya University</a>, in Nagoya, Japan, during the summer of 2018. While I was there, I
+                        worked with <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a> on verifying dynamic,
+                        succinct representations of bit vectors in Coq. Before that, I received my B.S. in computer science and <a href="https://ase.tufts.edu/ir/">international
+                        relations</a> from Tufts University in May 2018. During my undergraduate career, I worked with Sam Guyer on Elephant
+                        Tracks, a GC tracing tool for Java programs.
+                    </p>
+                    <p>
+                        For more details, please refer to my <a href="assets/cv.pdf">curriculum vitae</a>.
+                    </p>
+                </div>
+
+                <div class="justify-content-between border-bottom mt-2 pt-1" id="contact">
+                    <h3>Contact Information</h3>
+                    <p>
+                        <b>Physical Address:</b> 161 College Avenue, Department of Computer Science, Halligan Hall,
+                        Medford, MA 02155, USA <a href="https://goo.gl/maps/dHgj7Aoe6F32">[Google Maps]</a><br>
+                        <b>E-mail:</b> <a href="mailto:me@xuanruiqi.com">me@xuanruiqi.com</a> or
+                        <a href="mailto:xqi01@cs.tufts.edu">xqi01@cs.tufts.edu</a> (for research-related &amp; academic
+                        communication)<br>
+                        <b>Twitter:</b> <a href="https://twitter.com/xuanruirqi">@xuanruirqi</a><br>
+                        <b>GitHub:</b> <a href="https://github.com/xuanruiqi">xuanruiqi</a><br>
+                        <b>Public Key (GPG):</b> <a href="assets/pubkey.asc">download</a>
+                    </p>
+                </div>
+
+                <div class="justify-content-between border-bottom mt-2 pt-1" id="recent">
+                    <h3>Recent Activities</h3>
+                    <ul>
+                        <li>January 14-19, 2019: attending POPL 2019 in Lisbon. Giving a talk at the associated
+                            workshop OBT '19.</li>
+                        <li>November 7-9, 2018: attended SPLASH/OOPSLA 2018 in Boston. Presented my poster at the SRC.</li>
+                        <li>September 24-29, 2018: attended ICFP 2018 in St. Louis, USA.</li>
+                        <li>June-August 2018: visiting and working with Jacques Garrigue in Nagoya, Japan.</li>
+                    </ul>
+                </div>
+
+                <div class="justify-content-between border-bottom mt-2 pt-1" id="research">
+                    <h3>Research</h3>
+                    <h4>Interests</h4>
+                    <p>
+                        My research interests are mainly in programming languages with advanced type systems,
+                        especially dependently-typed programming languages. I am also interested in proof assistants, and in 
+                        formalizing programs and mathematics with them. Furthermore, I like to think about applications of these
+                        systems: dependently-typed programming with effects, language-based security, certified compilation, et cetera. Usually, I
+                        like to write dependently-typed programs in <a href="https://www.idris-lang.org/">Idris</a>, and to hack on proofs using 
+                        <a href="https://coq.inria.fr/">Coq</a>.
+                    </p>
+                    <p>
+                        I also have an interest in the mathematics of programs and types. Especially, I am interested
+                        in
+                        algebraic structures (and categories) in functional programming, models and foundational
+                        theories for types,
+                        and foundations of mathematics using type theory.
+                    </p>
+                    <h4>Current Projects</h4>
+                    <ul>
+                        <li>Dependent Hazel: dependent types + first-class typed holes à la Hazel</li>
+                        <li>refining our Coq formalization of succinct data structures</li>
+                    </ul>
+                    <h4>Past Projects</h4>
+                    <ul>
+                        <li>Elephant Tracks II: extensible, efficient GC tracing</li>
+                        <li>Java heap visualization</li>
+                    </ul>
+                </div>
+
+                <div class="justify-content-between border-bottom mt-2 pt-1" id="papers">
+                    <h3>Publications</h3>
+                    <h4>Papers &amp; Drafts</h4>
+                    <p>
+                        <b>Proving Tree Algorithms for Succinct Data Structures</b><br>
+                        Reynald Affeldt, Jacques Garrigue, <u>Xuanrui Qi</u>, and Kazunari Tanaka. Working draft, 2018.
+                        Presented at various domestic venues in Japan.<br>
+                        <a href="assets/succinct.pdf">[PDF]</a> <a href="assets/succinct_slides.pdf">[Jacques's Slides (in Japanese)]</a>
+                        <a href="https://github.com/affeldt-aist/succinct">[Proofs]</a>
+                    </p>
+                    <p>
+                        <b>Elephant Tracks II: Elephant Tracks II: Practical, Extensible Memory Tracing</b><br>
+                        Xuanrui (Ray) Qi. Senior Honors Thesis, Tufts University, 2018.<br>
+                        <a href="assets/et2.pdf">[PDF]</a> <a href="assets/senior_thesis_defense.pdf">[Defense Slides]</a>
+                        <a href="https://github.com/ElephantTracksProject/et2-java">[Code]</a>
+                    </p>
+                    <h4>Talk Materials</h4>
+                    <p>
+                        <b>From Tactics to Structure Editors for Proofs.</b><br>
+                        Xuanrui (Ray) Qi. Off the Beaten Track 2019 (<i>OBT '19</i>).<br>
+                        <a href="assets/tactics_talk.pdf">[Talk Abstract (PDF)]</a>
+                    </p>
+                    <p>
+                        <b>A Practical and Extensible Framework for Garbage Collection Tracing</b><br>
+                        Xuanrui (Ray) Qi. SPLASH 2018 Student Research Competition.<br>
+                        <a href="assets/splash2018src_abstract.pdf">[Extended Abstract (PDF)]</a>
+                    </p>
+                </div>
+
+                <div class="justify-content-between border-bottom mt-2 pt-1" id="personal">
+                    <h3>Personal</h3>
+                    <p>
+                        My Erdős number is at most 5, via the shortest known collaboration path: <a href="https://staff.aist.go.jp/reynald.affeldt/">
+                        Reynald Affeldt</a>, <a href="http://www-kb.is.s.u-tokyo.ac.jp/~koba/">Naoki Kobayashi</a>,
+                        <a href="http://www.ru.is/kennarar/mmh/">Magnús M. Halldórsson</a>, <a href="https://www.cs.rutgers.edu/~szegedy/">Márió
+                        Szegedy</a>, Paul Erdős. I do not have a Bacon number, as I have never appeared in a film as of yet.
+                    </p>
+                    <p>
+                        I am a user of Arch Linux; you should try it too. I maintain a few packages in
+                        the Arch User Repository, most notably the Arch package for SML#. When I hack on code,
+                        my tools of choice are OCaml, Racket, (sometimes) Haskell and Erlang. My editor of choice is
+                        the glorious Emacs, although it is well known that <code>ed</code> is
+                        <a href="https://www.gnu.org/fun/jokes/ed-msg.html">the standard and the best text editor</a>.
+                    </p>
+                    <p>
+                        Before I started college in the U.S., I lived and grew up in Shenzhen, China. Now, I live
+                        in Somerville, Massachusetts. I still miss not having below-freezing temperatures in the winter.
+                    </p>
+                    <p>
+                        I prefer to be referred to by the singular <i>they</i>, especially in a professional setting,
+                        but I am fine with <i>he</i>.
+                    </p>
+                    <p>
+                        My Chinese name is written 亓璇睿 in Chinese characters, and in Mandarin
+                        pronounced /tɕʰi˧˥ ɕɥɛn˧˥ ɻwei̯˥˩/ (in IPA). Difficult, isn't it? I find the best approximation
+                        to be the Japanese <i>katakana</i> (modulo tones): チー・シュエンルイ. If you can read Hanyu Pinyin or Bopomofo
+                        (Zhuyin Fuhao), it is pronounced [qí xuán ruì] or ㄒㄧˊ ㄏㄩㄢˊ ㄖㄨㄟˋ. In fact, even many native Chinese speakers cannot
+                        pronounce my name properly. Therefore, in an English-language setting, I prefer to just be addressed as "Ray".
+                    </p>
+                </div>
+            </main>
+
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
