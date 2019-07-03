@@ -60,7 +60,7 @@
 
             <main role="main" class="col-md-8 ml-sm-auto col-lg-9 px-4">
                 <div class="justify-content-between align-items-center pt-4 border-bottom">
-                    <h2 class="title" id="intro">Xuanrui (Ray) Qi</h2>
+                    <h2 class="title" id="intro">Xuanrui Qi</h2>
                     <p>
                         I have just finished my M.S. in <a href="https://engineering.tufts.edu/cs/">computer science</a> at
                         <a href="https://www.tufts.edu">Tufts University</a>, and currently I am in a transitional period. 
@@ -86,7 +86,7 @@
                         and worked with Professor Sam Guyer on redesigning Elephant Tracks, a GC tracing tool for Java programs. 
                     </p>
                     <p>
-                        For more details, please refer to my <a href="assets/cv.pdf">curriculum vitae</a> (last updated June 15, 2019).
+                        For more details, please refer to my <a href="assets/cv.pdf">curriculum vitae</a> (last updated July 2, 2019).
                     </p>
 
                     <p>
@@ -116,10 +116,13 @@
                 <div class="justify-content-between border-bottom mt-2 pt-1">
                     <h3 class="title" id="recent">Recent Activities</h3>
                     <ul>
+                        <li>July 2, 2019: our <a href="assets/compact_dependent.pdf">talk proposal</a> on type-driven development of correct tree 
+                            algorithms in Coq has been accepted to the <a href="https://staff.aist.go.jp/reynald.affeldt/coq2019/index.html">Coq 
+                            Workshop 2019</a>!</li>
                         <li>June 1, 2019: our paper, "Proving Tree Algorithms for Succinct Data Structures" 
                             (coauthored with <a href="https://staff.aist.go.jp/reynald.affeldt/">
                             Reynald Affeldt</a>, <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, 
-                            and Kazunari Tanaka), was accepted to <a href="https://itp19.cecs.pdx.edu/">ITP 2019</a>!</li>
+                            and Kazunari Tanaka), has been accepted to <a href="https://itp19.cecs.pdx.edu/">ITP 2019</a>!</li>
                         <li>June 3-6, 2019: I will be visiting Cyrus and the programming languages research group at the 
                             University of Chicago.</li>
                         <li>May 2019: I have graduated from Tufts University (again), this time with a M.S. in computer science. All 
@@ -133,23 +136,28 @@
                     <h3 class="title" id="research">Research</h3>
                     <h4>Interests</h4>
                     <p>
-                        My research interests are in the broad fields of programming languages and logic. More precisely, they include 
-                        type theory, functional programming, proof assistants, and the theory and practice of type-driven development, and their 
-                        intersections. I consider myself mainly a theoretical computer scientist, but I like to work on things that have
-                        implications for practitioners as well.
+                        Much of my research interests revolve around types, for programs and for proofs. I am interested in a broad 
+                        range of issues involving types.
                     </p>
                     <p>
-                        My main interests at the moment including using and extending dependent type theory for programming languages and 
-                        proof assistants, and the development of programming languages for type-driven development and verification. Currently, 
-                        I am particularly interested in combining dependent types with structural polymorphism and subtyping, and in designing 
-                        interactive programming languages with typed holes, and interfaces for interacting with them, mostly from the viewpoint of 
-                        editor-as-theorem provers (see the <a href="#obt19">note accompanying my OBT 2019 talk</a>).
+                        Currently, I am interested in expressive type systems for type-driven functional programming, and in making dependent types 
+                        practical for verification and programming. For the former, I am interested in ML-like programming languages &mdash;
+                        particularly, I am interested in mechanized proofs about and implementation of the type systems of <a href="https://ocaml.org/">OCaml</a> 
+                        (working with <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>) and 
+                        <a href="https://hazel.org/">Hazel</a> (working with <a href="https://people.cs.uchicago.edu/~comar/">Cyrus Omar</a>).
                     </p>
                     <p>
-                        On the more practical side, I am interested in using proof assistants to verify programs and mathematics (see 
-                        <a href="#itp19">our upcoming ITP 2019 paper on verifying algorithms for succinct data structures</a>). On a more theoretical 
-                        side, I am interested in homotopy type theory, constructive mathematics, models for dependent type theories, and more broadly
-                        the application of algebra, particularly category theory and algebraic topology, to theoretical computer science and logic.
+                        For the latter, I am interested in the design of proof assistants based on dependent types. Particularly, I am 
+                        interested in the intersection of dependently-typed programming and proof engineering. I am interested in formalizing and 
+                        extending user-facing aspects of dependently-typed theorem provers using reflection and metaprogramming, and in 
+                        extending current dependent type theories and 
+                        languages to better support dependently-typed programming. I am also interested in using proof assistants, particularly
+                        <a href="https://coq.inria.fr/">Coq</a>, to verify programs and mathematics 
+                        (see <a href="#itp19">our upcoming ITP 2019 paper on verifying algorithms for succinct data structures</a>).
+                    </p>
+                    <p>
+                        In mathematics, I am mainly interested in constructive algebra, espcially mathematics developed using constructive type theory, 
+                        and in the internal connections between topology, category theory and type theory.
                     </p>
                     <h4>Current Projects</h4>
                     <ul>
@@ -184,7 +192,7 @@
                     <h4 id="talks">Talk Materials</h4>
                     <p>
                         <b>Experience Report: Type-Driven Development of Certified Tree Algorithms in Coq</b><br>
-                        Reynald Affeldt, Jacques Garrigue, <u>Xuanrui Qi</u>, and Kazunari Tanaka. Submitted to
+                        Reynald Affeldt, Jacques Garrigue, <u>Xuanrui Qi</u>, and Kazunari Tanaka. Accepted to
                         the Coq Workshop 2019.<br>
                         <a href="assets/compact_dependent.pdf">[Talk Abstract (PDF)]</a>
                     </p>
@@ -202,8 +210,9 @@
                     <p>
                         <b>Formalizing the DFUDS Representation in Coq</b><br>
                         Project report for CS 591K, "Foundations and Pragmatics of Dependently-Typed Systems", Spring 2019, 
-                        Boston University. Note that the work reported is still very preliminary, and the approach outlined 
-                        might turn out not to be the most best approach.<br>
+                        Boston University. <br>
+                        (Note that the work reported is still very preliminary, and the approach outlined 
+                        might turn out not to be the most best approach.)<br>
                         <a href="assets/591k_report.pdf">[PDF]</a>
                     </p>
                     <p>
@@ -243,8 +252,7 @@
                         but I am fine with <i>he</i>.
                     </p>
                     <p>
-                        In an English-language setting, I prefer to just be addressed as "Ray". When I write papers, my name is 
-                        "Xuanrui (Ray) Qi". My Chinese name (Xuanrui Qi) is written 亓璇睿 in 
+                        In an English-language setting, I often prefer to just be addressed as "Ray".  My Chinese name (Xuanrui Qi) is written 亓璇睿 in 
                         Chinese characters, and in Mandarin it is pronounced /tɕʰi˧˥ ɕɥɛn˧˥ ɻwei̯˥˩/ (in IPA). I find the best approximation 
                         (modulo tones) to be the Japanese katakana: チー・シュエンルイ. If you can read Hanyu Pinyin or Bopomofo
                         (Zhuyin Fuhao), it is pronounced [qí xuán ruì] or ㄒㄧˊ ㄏㄩㄢˊ ㄖㄨㄟˋ. By the way, even many native Chinese 
