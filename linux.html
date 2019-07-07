@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Xuanrui Qi">
+    <title>Linux - Xuanrui Qi</title>
+
+
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap p-0">
+        <a class="navbar-brand col-md-2 col-lg-2 mr-0" href="#">Xuanrui Qi</a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 col-lg-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Back to home</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main role="main" class="col-md-8 ml-sm-auto col-lg-9 px-4">
+                <div class="justify-content-between align-items-center pt-4 border-bottom">
+                    <h2 class="title" id="intro">Linux</h2>
+                    <p>
+                        Here you can find information about my engagements with Linux, and about software I package for Linux, 
+                        especially for Arch Linux. If you have any questions, please contact me at 
+                        <a href="mailto:me@xuanruiqi.com">me@xuanruiqi.com</a>. You can also find me on the 
+                        <a href="https://bbs.archlinux.org/profile.php?id=118210">Arch Linux Forums</a>.
+                    </p>
+                </div>
+
+                <div class="justify-content-between mt-2 pt-1">
+                    <h3 class="title" id="arch">Arch Linux Packages</h3>
+                    <p>
+                        I maintain a few unofficial software packages for Arch Linux, including a package for the 
+                        <a href="http://compcert.inria.fr/">CompCert verified C compiler</a>, and the 
+                        <a href="https://www.pllab.riec.tohoku.ac.jp/smlsharp/">SML# programming language and compiler</a>. 
+                        The PKGBUILDs can be found on the Arch User Repository (AUR). You can see a list of all packages I maintain 
+                        <a href="https://aur.archlinux.org/packages/?SeB=m&K=xuanruiqi">here</a>.
+                    </p>
+                    <p>
+                        I also maintain an unofficial repository of pre-built<sup>1</sup> AUR packages at 
+                        <code>https://arch.xuanruiqi.com/repo/</code>, mainly of interest to 
+                        functional programmers and formal methods practitioners. You should follow the instructions 
+                        <a href="https://wiki.archlinux.org/index.php/Unofficial_user_repositories">on the Arch Wiki</a>, and 
+                        add the following to your <code>pacman.conf</code>:<br>
+                        <pre class="bg-light rounded" style="padding: 1em;"><code>[xuanrui]
+Server = https://arch.xuanruiqi.com/repo/</code></pre>
+                        You will also need to add my key to the <i>pacman</i> keyring:
+                        <kbd>sudo pacman-key --recv-keys 6E06FBC8</kbd>.  
+                    </p>
+                    <p>
+                        I also have an even less official repository at <code>https://arch.xuanruiqi.com/private/</code>, 
+                        which is intended for personal use. The pacakges are compiled with flags local to my machine<sup>2</sup>, so they may 
+                        not work on yours. However, if your system runs on an Intel Skylake or later processor, 
+                        you can use this repository:
+                        <pre class="bg-light rounded" style="padding: 1em;"><code>[xuanrui-private]
+Server = https://arch.xuanruiqi.com/private/</code></pre>
+                    </p>
+                    <p>
+                        <small>1: my compilation flags are a bit more aggressive that the defaults set by Arch, but 
+                                they should be completely safe. To be more specific, I use <code>-O3 -fomit-frame-pointer</code> instead of <code>-O2</code> 
+                                which is the default.</small><br>
+                        <small>2: I use <code>-march=native</code> in addition to <code>-O3 -fomit-frame-pointer</code> for those packages.</small>
+                    </p>
+                </div>
+            </main>
+
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

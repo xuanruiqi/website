@@ -38,6 +38,9 @@
                             <a class="nav-link" href="#pubs">Papers, Talks &amp; Writing</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#software">Software</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#personal">Personal</a>
                         </li>
                         <li class="nav-item">
@@ -49,7 +52,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="https://blog.xuanruiqi.com">Blog</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="linux.html">Linux</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://github.com/xuanruiqi">Code (GitHub)</a>
                         </li>
@@ -123,7 +128,7 @@
                             (coauthored with <a href="https://staff.aist.go.jp/reynald.affeldt/">
                             Reynald Affeldt</a>, <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, 
                             and Kazunari Tanaka), has been accepted to <a href="https://itp19.cecs.pdx.edu/">ITP 2019</a>!</li>
-                        <li>June 3-6, 2019: I will be visiting Cyrus and the programming languages research group at the 
+                        <li>June 3-6, 2019: I visited Cyrus and the programming languages research group at the 
                             University of Chicago.</li>
                         <li>May 2019: I have graduated from Tufts University (again), this time with a M.S. in computer science. All 
                             my previous Tufts email addresses will still work.</li>
@@ -163,12 +168,12 @@
                     <ul>
                         <li>Extending Hazel with polymorphism (à la System F) and programmable edit actions</li>
                         <li>Techniques for formal reasoning about tactic-based proofs and programming</li>
-                        <li>Refining our Coq formalization of succinct data structures</li>
+                        <li><a href="https://github.com/affeldt-aist/succinct">Refining our Coq formalization of succinct data structures</a></li>
                     </ul>
                     <h4>Past Projects</h4>
                     <ul>
-                        <li>Elephant Tracks II: extensible, efficient GC tracing</li>
-                        <li>Java heap visualization</li>
+                        <li><a href="https://github.com/ElephantTracksProject/et2-java">Elephant Tracks II: extensible, efficient GC tracing</a></li>
+                        <li><a href="https://github.com/HeapVisCapstone">Java heap visualization</a></li>
                     </ul>
                 </div>
 
@@ -178,7 +183,8 @@
                     <p id="itp19">
                         <b>Proving Tree Algorithms for Succinct Data Structures</b><br>
                         Reynald Affeldt, Jacques Garrigue, <u>Xuanrui Qi</u>, and Kazunari Tanaka. Accepted to
-                        the 10<sup>th</sup> Conference on Interactive Theorem Proving (ITP 2019).<br>
+                        the <a href="https://itp19.cecs.pdx.edu/">10<sup>th</sup> International Conference on Interactive 
+                        Theorem Proving (ITP 2019)</a>.<br>
                         <a href="assets/succinct.pdf">[PDF (local copy)]</a> <a href="https://arxiv.org/pdf/1904.02809.pdf">[PDF (arXiv)]</a>
                         <a href="assets/succinct_slides.pdf">[Slides]</a>
                         <a href="https://github.com/affeldt-aist/succinct">[Proofs]</a>
@@ -189,21 +195,21 @@
                         <a href="assets/et2.pdf">[PDF]</a> <a href="assets/senior_thesis_defense.pdf">[Defense Slides]</a>
                         <a href="https://github.com/ElephantTracksProject/et2-java">[Code]</a>
                     </p>
-                    <h4 id="talks">Talk Materials</h4>
+                    <h4 id="talks">Talk Materials & Extended Abstracts</h4>
                     <p>
                         <b>Experience Report: Type-Driven Development of Certified Tree Algorithms in Coq</b><br>
                         Reynald Affeldt, Jacques Garrigue, <u>Xuanrui Qi</u>, and Kazunari Tanaka. Accepted to
-                        the Coq Workshop 2019.<br>
+                        the <a href="https://staff.aist.go.jp/reynald.affeldt/coq2019/">Coq Workshop 2019</a>.<br>
                         <a href="assets/compact_dependent.pdf">[Talk Abstract (PDF)]</a>
                     </p>
                     <p>
                         <b class="paper-link" id="obt19">From Tactics to Structure Editors for Proofs.</b><br>
-                        Xuanrui (Ray) Qi. Off the Beaten Track 2019 (OBT 2019).<br>
+                        Xuanrui (Ray) Qi. <a href="https://popl19.sigplan.org/track/OBT-2019-papers">Off the Beaten Track 2019</a> (OBT 2019).<br>
                         <a href="assets/tactics_talk.pdf">[Talk Abstract (PDF)]</a> <a href="assets/tactics_slides.pdf">[Talk Slides]</a>
                     </p>
                     <p>
                         <b>A Practical and Extensible Framework for Garbage Collection Tracing</b><br>
-                        Xuanrui (Ray) Qi. SPLASH 2018 Student Research Competition.<br>
+                        Xuanrui (Ray) Qi. <a href="https://2018.splashcon.org/track/splash-2018-Student-Research-Competition">SPLASH 2018 Student Research Competition</a>.<br>
                         <a href="assets/splash2018src_abstract.pdf">[Extended Abstract (PDF)]</a>
                     </p>
                     <h4>Non-Research Technical Writing</h4>
@@ -227,6 +233,41 @@
                     </p>
                 </div>
 
+                <div class="justify-content-between border-bottom mt-2 pt-1">
+                    <h3 class="title" id="software">Software</h3>
+                    <p>
+                        Over the course of many years, I created some software, mainly for personal use, but maybe also of public 
+                        interest:
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/xuanruiqi/dynruby">DynRuby</a>: a JavaScript tool to display 
+                            ruby annotations on hover. You can find a demo <a href="https://www.xuanruiqi.com/dynruby/index.html">here</a>.
+                        </li>
+                        <li>
+                            <a href="https://github.com/xuanruiqi/ruby-anno-pp">RubyPP</a>: ruby annotation preprocessor for 
+                            Markdown. Converts ruby annotated Markdown to GitHub flavored markdown.
+                        </li>
+                        <li>
+                            <a href="https://github.com/xuanruiqi/rbrainf-k-cpp">Brainf**k</a>: a Brainf**k interpreter written in C++11, for 
+                            fun and (probably not) profit. This was written years ago when I was a sophomore.
+                        </li>
+                    </ul>
+                    <p>
+                        Of course, I create some more serious software for my research. These can be found in 
+                        <a href="#research">the corresponding section</a>.
+                    </p>
+                    <p>
+                        I am a functional programmer. My programming language of choice is OCaml, 
+                        but I sometimes also code in Haskell, and to a lesser extent in Idris and Erlang. In the rare occasion that 
+                        I code imperatively, I usually use Ruby or sometimes Python. My editor of choice is
+                        the glorious <a href="https://www.gnu.org/software/emacs/">Emacs</a>, despite that it is well known that <code>ed</code> is
+                        <a href="https://www.gnu.org/fun/jokes/ed-msg.html">the standard and the best text editor</a>. 
+                        My operating system of choice is <a href="https://www.archlinux.org/">Arch Linux</a>: please 
+                        see my <a href="linux.html">Linux page</a> for my engagements in the Linux community.
+                    </p>
+                </div>
+
                 <div class="title justify-content-between border-bottom mt-2 pt-1">
                     <h3 class="title" id="personal">Personal</h3>
                     <p>
@@ -234,14 +275,6 @@
                         Reynald Affeldt</a>, <a href="http://www-kb.is.s.u-tokyo.ac.jp/~koba/">Naoki Kobayashi</a>,
                         <a href="http://www.ru.is/kennarar/mmh/">Magnús M. Halldórsson</a>, <a href="https://www.cs.rutgers.edu/~szegedy/">Márió
                         Szegedy</a>, Paul Erdős. I do not have a Bacon number, as I have never appeared in a film as of yet.
-                    </p>
-                    <p>
-                        I am a functional programmer. When I hack on code,
-                        my tools of choice are OCaml, Racket, (sometimes) Haskell and Erlang. My editor of choice is
-                        the glorious Emacs, despite that it is well known that <code>ed</code> is
-                        <a href="https://www.gnu.org/fun/jokes/ed-msg.html">the standard and the best text editor</a>. 
-                        My operating system of choice is <a href="https://www.archlinux.org/">Arch Linux</a>, and I maintain a few
-                        <a href="https://aur.archlinux.org/packages/?SeB=m&K=xuanruiqi">packages on the Arch User Repository</a>.
                     </p>
                     <p>
                         Before I started college in the U.S., I lived and grew up in Shenzhen, China. Now, I live
