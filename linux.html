@@ -57,17 +57,20 @@
                         <a href="https://wiki.archlinux.org/index.php/Unofficial_user_repositories">on the Arch Wiki</a>, and 
                         add the following to your <code>pacman.conf</code>:<br>
                         <pre class="bg-light rounded" style="padding: 1em;"><code>[xuanrui]
-Server = https://arch.xuanruiqi.com/repo/</code></pre>
-                        You will also need to add my key to the <i>pacman</i> keyring:
-                        <kbd>sudo pacman-key --recv-keys 6E06FBC8</kbd>.  
+Server = https://arch.xuanruiqi.com/repo/</code></pre></p>
+                    <p>
+                        You will also need to add my key to the <i>pacman</i> keyring and sign it:<br>
+                        <pre class="bg-light rounded" style="padding: 1em;"><code># pacman-key --recv-keys 6E06FBC8
+# pacman-key --lsign-key 6E06FBC8</code></pre>
                     </p>
                     <p>
-                        I also have an even less official repository at <code>https://arch.xuanruiqi.com/private/</code>, 
-                        which is intended for personal use. The pacakges are compiled with flags local to my machine<sup>2</sup>, so they may 
+                        I have an even less official repository at <code>https://arch.xuanruiqi.com/private/</code>, 
+                        which is intended for my personal use only. The pacakges are compiled with flags local to my machine<sup>2</sup>, so they may 
                         not work on yours. However, if your system runs on an Intel Skylake or later processor, 
-                        you can use this repository:
+                        you may be able to use this repository:
                         <pre class="bg-light rounded" style="padding: 1em;"><code>[xuanrui-private]
 Server = https://arch.xuanruiqi.com/private/</code></pre>
+                        Sometimes I may customize and modify the PKGBUILDs before the packages are built, so use with caution.
                     </p>
                     <p>
                         <small>1: my compilation flags are a bit more aggressive that the defaults set by Arch, but 
