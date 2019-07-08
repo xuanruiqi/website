@@ -64,19 +64,9 @@ Server = https://arch.xuanruiqi.com/repo/</code></pre></p>
 # pacman-key --lsign-key 6E06FBC8</code></pre>
                     </p>
                     <p>
-                        I have an even less official repository at <code>https://arch.xuanruiqi.com/private/</code>, 
-                        which is intended for my personal use only. The pacakges are compiled with flags local to my machine<sup>2</sup>, so they may 
-                        not work on yours. However, if your system runs on an Intel Skylake or later processor, 
-                        you may be able to use this repository:
-                        <pre class="bg-light rounded" style="padding: 1em;"><code>[xuanrui-private]
-Server = https://arch.xuanruiqi.com/private/</code></pre>
-                        Sometimes I may customize and modify the PKGBUILDs before the packages are built, so use with caution.
-                    </p>
-                    <p>
                         <small>1: my compilation flags are a bit more aggressive that the defaults set by Arch, but 
                                 they should be completely safe. To be more specific, I use <code>-O3 -fomit-frame-pointer</code> instead of <code>-O2</code> 
                                 which is the default.</small><br>
-                        <small>2: I use <code>-march=native</code> in addition to <code>-O3 -fomit-frame-pointer</code> for those packages.</small>
                     </p>
                 </div>
             </main>
