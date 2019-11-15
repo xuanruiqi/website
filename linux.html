@@ -10,6 +10,7 @@
 
 
     <link href="./styles.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">>
 </head>
 
 <body>
@@ -72,9 +73,17 @@ Server = https://arch.xuanruiqi.com/repo/</code></pre>
 # pacman-key --lsign-key 6E06FBC8</code></pre>
                     </p>
                     <p>
+                        <i class="fa fa-exclamation-triangle"></i> It is assumed that you have a very up-to-date system. Otherwise. 
+                        my repository will not work properly for you and you will get weird errors. For example,
+                        I have zst-compressed packages in my repository, and the database itself is also zst-compressed, so you 
+                        must have the latest pacman with the zst compression/decompression tool. Moreover, everything Python 
+                        will only work with the latest Python, due to how the Arch Linux packaging system works. 
+                    </p>
+                    <p>
                         <small>1: my compilation flags are a bit more aggressive that the defaults set by Arch, but 
-                                they should be completely safe. To be more specific, I use <code>-O3 -fomit-frame-pointer</code> instead of <code>-O2</code> 
-                                which is the default.</small><br>
+                                they should be completely safe. To be more specific, I use <code>-O3 -fomit-frame-pointer</code> instead of 
+                                the default <code>-O2</code>. Also, I use <code>-mtune=native</code> and my machine is a relatively new 
+                                Intel Kaby Lake R, so if you run an old CPU (or an AMD CPU), there could be performance issues.</small><br>
                     </p>
                 </div>
             </main>
