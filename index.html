@@ -14,12 +14,36 @@
 
 <body>
     <nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap p-0">
-        <a class="navbar-brand col-md-2 col-lg-2 mr-0" href="#">Xuanrui Qi</a>
+        
+        <a class="navbar-brand" href="#">Xuanrui Qi</a>
+        <button class="navbar-toggler d-block d-lg-none d-xl-none" type="button" data-toggle="collapse" data-target="#spNav" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="spNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://blog.xuanruiqi.com">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="linux.html">Linux</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="writing.html">Notes &amp; Technical Writing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/xuanruiqi">Code (GitHub)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja.html">in Japanese (日本語)</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 col-lg-2 d-none d-md-block bg-light sidebar">
+            <nav class="col-lg-2 d-none d-lg-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -69,19 +93,22 @@
             </nav>
 
 
-            <main role="main" class="col-md-8 ml-sm-auto col-lg-9 px-4">
+            <main role="main" class="col-lg-8 ml-sm-auto ml-md-auto col-lg-9 px-4">
                 <div class="justify-content-between align-items-center pt-4 border-bottom">
                     <h2 class="title" id="intro">Xuanrui Qi</h2>
                     <p>
                         I am a graduate student at the <a href="https://www.math.nagoya-u.ac.jp/">Graduate
                         School of Mathematics, Nagoya University</a> (名古屋大学大学院多元数理科学研究科). My research advisor is 
-                        <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, and I mainly work on
-                        typed functional programming languages, computer-assisted interactive proof, type theory, and category theory.
+                        <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, and I am interested in a 
+                        wide range of topics in theoretical computer science and mathematics, with type theory and category theory 
+                        being a unifying theme.
+                        I am also a formal methods consultant and engineer, currently working with 
+                        <a href="https://www.linkedin.com/in/vmurali15">Murali Vijayaraghavan</a> at <a href="https://www.sifive.com/">SiFive</a>
+                        on the Kami project and contributing to the complete verification of a fully pipelined <a href="https://riscv.org/">RISC-V</a> 
+                        processor in Coq. 
                     </p>
                     <p>
-                        Before this, I interned at <a href="https://www.sifive.com/">SiFive</a> during the summer of 2019, working with 
-                        <a href="https://www.linkedin.com/in/vmurali15">Murali Vijayaraghavan</a>
-                        on verifying <a href="https://riscv.org/">RISC-V</a> processors in Coq.
+                        Before coming to Nagoya, I was an intern at SiFive during the summer of 2019.
                         In May 2019, I finished my M.S. in <a href="https://engineering.tufts.edu/cs/">computer science</a> at
                         <a href="https://www.tufts.edu">Tufts University</a>, where I was officially advised by 
                         <a href="https://www.cs.tufts.edu/~sguyer/">Professor Samuel Guyer</a> and affiliated with the 
@@ -115,6 +142,7 @@
                 <div class="justify-content-between border-bottom mt-2 pt-1">
                     <h3 class="title" id="recent">Recent Activities</h3>
                     <ul>
+                        <li>March 2020: due to COVID-19, I am halting in-person meetings and travel indefinitely.</li>
                         <li>Nov 18-19, 2019: I attended the <a href="https://akihisayamada.github.io/tpp2019/">15<sup>th</sup> TPP meeting</a>
                             at the National Institute of Informatics in Tokyo.</li>
                         <li>Sept 8-12, 2019: I attended <a href="https://itp19.cecs.pdx.edu/">ITP 2019</a> and the 
@@ -127,38 +155,31 @@
                             (coauthored with <a href="https://staff.aist.go.jp/reynald.affeldt/">
                             Reynald Affeldt</a>, <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, 
                             and Kazunari Tanaka), has been accepted to <a href="https://itp19.cecs.pdx.edu/">ITP 2019</a>!</li>
-                        <li>May 2019: I have graduated from Tufts University (again), this time with a M.S. in computer science. All 
-                            my previous Tufts email addresses will still work.</li>
                     </ul>
                 </div>
 
                 <div class="title justify-content-between border-bottom mt-2 pt-1">
                     <h3 class="title" id="research">Research</h3>
-                    <h4>Interests</h4>
+                    <h4>Main Interests</h4>
                     <p>
-                        I like theoretical computer science and mathematics, and especially their intersection. For the former, I am 
-                        mostly interested in programming language theory and type theory; for the latter, I am interested in 
-                        category theory, topology, and mathematical logic. A lot of my work involves
-                        writing proofs and (sometimes) implementing type systems; I believe that the right way to approach this is to 
-                        work in a proof assistant. Much of my work is conducted in my preferred proof assistant, <a href="https://coq.inria.fr/">Coq</a>. 
+                        I have a variety of research interests, both in theoretical computer science and (pure) mathematics.
                     </p>
-                    <p>
-                        Now, I am mainly working on designing, implementing and formalizing type systems for functional programming languages, 
-                        and on dependently-typed programming. Particularly, I am interested in the ML family programming languages &mdash;
-                        particularly, I am interested in the implementation of and mechanized proofs about the type systems of 
-                        <a href="https://ocaml.org/">OCaml</a> and <a href="https://hazel.org/">Hazel</a>. Lately, I am studying type inference for 
-                        and the semantics of <a href="https://caml.inria.fr/pub/docs/manual-ocaml/manual033.html">generalized algebraic data types</a> (GADTs). 
-                    </p>
-                    <p>
-                        Towards more pure mathematics, I am interested in type theory and category theory, especially their intersections. 
-                        Specifically, I lean towards approaching type theory and logic from a categorical and/or topological point of view, and vice
-                        versa. Currently, this mostly means homotopy type theory and topos theory &mdash; although I know little about 
-                        either, and I am mainly learning about things. I am also interested in constructive mathematics and formal topology in general.
-                    </p>
+                    <h5>Computer science:</h5>
+                    <ul>
+                        <li>Type inference for generalized algebraic data types (GADTs)</li>
+                        <li><a href="https://www.cl.cam.ac.uk/~sd601/thesis.pdf">Algebraic, compositional approach to subtyping</a></li>
+                        <li>Type theory for mathematical reasoning and <a href="https://homotopytypetheory.org/book/">homotopy type theory</a></li>
+                        <li>Formalizing mathematics and computational structures in the <a href="https://coq.inria.fr">Coq</a> proof assistant</li>
+                    </ul>
+                    <h5>Mathematics:</h5>
+                    <ul>
+                        <li>Topos theory and categorical logic</li>
+                        <li>Algebraic topology</li>
+                        <li>Synthetic approach to mathematics, particularly <a href="https://rawgit.com/iblech/internal-methods/master/notes.pdf">algebraic geometry</a></li>
+                    </ul>
                     <h4>Current Projects</h4>
                     <ul>
                         <li>Specification and type inference for GADTs in OCaml</li>
-                        <li>Polymorphism in Hazel</li>
                         <li>Complete verification of a practical 
                             <a href="https://riscv.org/">RISC-V</a> processor in <a href="https://github.com/sifive/Kami">Kami</a>, 
                             a DSL for designing formally verified hardware in Coq</li>

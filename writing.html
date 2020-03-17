@@ -15,14 +15,26 @@
 <body>
     <nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap p-0">
         <a class="navbar-brand col-md-2 col-lg-2 mr-0" href="#">Xuanrui Qi</a>
+
+        <button class="navbar-toggler d-block d-lg-none d-xl-none" type="button" data-toggle="collapse"
+            data-target="#spNav" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="spNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Back to home</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 col-lg-2 d-none d-md-block bg-light sidebar">
+            <nav class="col-lg-2 d-none d-lg-block bg-light sidebar">
                 <div class="sidebar-sticky">
-                    
-
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Back to home</a>
@@ -32,11 +44,13 @@
             </nav>
 
 
-            <main role="main" class="col-md-8 ml-sm-auto col-lg-9 px-4">
+
+            <main role="main" class="col-lg-8 ml-sm-auto ml-md-auto col-lg-9 px-4">
                 <div class="justify-content-between align-items-center pt-4 border-bottom">
                     <h2 class="title" id="intro">Mathematical Notes</h2>
                     <p>
-                        Here are my mathematical notes: short notes about well-known or research problems, notes from self-studying 
+                        Here are my mathematical notes: short notes about well-known or research problems, notes from
+                        self-studying
                         mathematical texts, and lecture notes from lectures.
                         By "mathematics", of course theoretical computer science is included.
                     </p>
@@ -47,10 +61,11 @@
                     <p>
                         <b>Topics in Mathematical Science VI (数理科学特論VI)</b> (WIP)<br>
                         Lecturer: Erik Darpö, Graduate School of Mathematics, Nagoya University, Fall 2019<br>
-                        <i>A gentle introduction to module theory and homological algebra, accessible to anyone with 
+                        <i>A gentle introduction to module theory and homological algebra, accessible to anyone with
                             a basic undergraduate background in abstract algebra.</i><br>
                         <a href="assets/SpecialTopicsFall19.pdf">[PDF]</a>
-                        <a href="https://github.com/xuanruiqi/math-notes/blob/master/SpecialTopicsFall19.tex">[LaTeX Source]</a>
+                        <a href="https://github.com/xuanruiqi/math-notes/blob/master/SpecialTopicsFall19.tex">[LaTeX
+                            Source]</a>
                         (Latest build: November 1, 2019)
                     </p>
                 </div>
@@ -59,9 +74,11 @@
                     <h3 class="title" id="form">Formalized Mathematics</h3>
                     <p>
                         <b>The Eckmann-Hilton Theorem</b><br>
-                        <i>The higher homotopy groups are abelian. Mostly following the proof of Theorem 2.1.6 in the</i>
-                            <a href="https://homotopytypetheory.org/book/">HoTT Book</a>.<br>
-                        <a href="https://github.com/xuanruiqi/hott-book-agda/blob/master/EckmannHilton.agda">[GitHub]</a>
+                        <i>The higher homotopy groups are abelian. Mostly following the proof of Theorem 2.1.6 in
+                            the</i>
+                        <a href="https://homotopytypetheory.org/book/">HoTT Book</a>.<br>
+                        <a
+                            href="https://github.com/xuanruiqi/hott-book-agda/blob/master/EckmannHilton.agda">[GitHub]</a>
                     </p>
                 </div>
 
@@ -69,55 +86,61 @@
                     <h3 class="title" id="survey">Surveys</h3>
                     <p>
                         <b>Securing Complex Software Systems Using Formal Verification and Specification</b><br>
-                        This was originally written as a course report for COMP 116, "Introduction to Computer Security", 
+                        This was originally written as a course report for COMP 116, "Introduction to Computer
+                        Security",
                         Fall 2017, Tufts University.<br>
                         <a href="assets/116_report.pdf">[PDF]</a>
                     </p>
                 </div>
 
                 <div class="justify-content-between mt-2 pt-1 border-bottom">
-                        <h3 class="title" id="short">Short Notes</h3>
-                        <p>
-                            <b>An Alternative Proof of Convergence for \(  e^x \)</b><br>
-                            <i>Proving that the exponential function converges using only the very basic facts about 
-                                infinite series.</i><br>
-                            <a href="assets/Exponential.pdf">[PDF]</a>
-                        </p>
-                    </div>
+                    <h3 class="title" id="short">Short Notes</h3>
+                    <p>
+                        <b>An Alternative Proof of Convergence for \( e^x \)</b><br>
+                        <i>Proving that the exponential function converges using only the very basic facts about
+                            infinite series.</i><br>
+                        <a href="assets/Exponential.pdf">[PDF]</a>
+                    </p>
+                </div>
 
                 <div class="justify-content-between mt-2 pt-1">
                     <h3 class="title" id="rep">Project Reports</h4>
-                    <p>
-                        <b>Formalizing the DFUDS Representation in Coq</b><br>
-                        Project report for CS 591K, "Foundations and Pragmatics of Dependently-Typed Systems", Spring 2019, 
-                        Boston University. <br>
-                        (Note that the work reported is still very preliminary, and the approach outlined 
-                        might turn out not to be the most best approach.)<br>
-                        <a href="assets/591k_report.pdf">[PDF]</a>
-                    </p>
-                    <p>
-                        <b>Exploring Corpora-Based Music Classification: Classifying Japanese Popular Music using Lyrics</b><br>
-                        Project report for COMP 150WC, "Working with Corpora", Fall 2018, Tufts University.<br>
-                        <a href="assets/150wc_report.pdf">[PDF]</a>
-                    </p>
+                        <p>
+                            <b>Formalizing the DFUDS Representation in Coq</b><br>
+                            Project report for CS 591K, "Foundations and Pragmatics of Dependently-Typed Systems",
+                            Spring 2019,
+                            Boston University. <br>
+                            (Note that the work reported is still very preliminary, and the approach outlined
+                            might turn out not to be the most best approach.)<br>
+                            <a href="assets/591k_report.pdf">[PDF]</a>
+                        </p>
+                        <p>
+                            <b>Exploring Corpora-Based Music Classification: Classifying Japanese Popular Music using
+                                Lyrics</b><br>
+                            Project report for COMP 150WC, "Working with Corpora", Fall 2018, Tufts University.<br>
+                            <a href="assets/150wc_report.pdf">[PDF]</a>
+                        </p>
                 </div>
             </main>
 
             <div class="col-sm-1 col-md-1 col-lg-1"></div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script>
         feather.replace();
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="index.js"></script>
     <script src="https://www.xuanruiqi.com/dynruby/dyn-ruby-2.js"></script>
 </body>
