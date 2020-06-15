@@ -100,28 +100,36 @@
                 <div class="justify-content-between align-items-center pt-4 border-bottom">
                     <h2 class="title" id="intro">Xuanrui Qi</h2>
                     <p>
-                        I am a graduate student at the <a href="https://www.math.nagoya-u.ac.jp/">Graduate
-                        School of Mathematics, Nagoya University</a> (名古屋大学大学院多元数理科学研究科). My research advisor is 
+                        I am a graduate student at the <a href="https://www.math.nagoya-u.ac.jp/" data-toggle="tooltip" data-placement="bottom"
+                            title="名古屋大学大学院多元数理科学研究科">Graduate
+                        School of Mathematics, Nagoya University</a>, in Nagoya, Japan. My research advisor is
                         <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, and I am interested in a 
                         wide range of topics in theoretical computer science and mathematics, with type theory and category theory 
                         being a unifying theme.
                         I am also a formal methods consultant and freelance software engineer, experienced in engineering formal proof 
                         and building working software systems with OCaml and Haskell. 
                     </p>
+
                     <p>
-                        Before this, I have been working with
-                        <a href="https://www.linkedin.com/in/vmurali15">Murali Vijayaraghavan</a> at <a href="https://www.sifive.com/">SiFive</a>
-                        on the Kami project and contributing to the complete verification of a fully pipelined <a href="https://riscv.org/">RISC-V</a> 
-                        processor in Coq. In 2019, I completed an M.S. in <a href="https://engineering.tufts.edu/cs/">computer science</a> at
-                        <a href="https://www.tufts.edu">Tufts University</a>, where I was officially advised by 
-                        <a href="https://www.cs.tufts.edu/~sguyer/">Professor Samuel Guyer</a> and affiliated with the 
-                        <a href="https://tupl.cs.tufts.edu">TuPL</a> research group.
-                        During the summer of 2018, I was a research visitor here at Nagoya University working with Jacques, and 
-                        before that, I received a B.S. degree from Tufts University in May 2018. 
-                        While I was an undergraduate, I majored in computer science and <a href="https://ase.tufts.edu/ir/">international 
-                        relations</a>, minored in <a href="https://math.tufts.edu">mathematics</a>, 
-                        and worked with Professor Sam Guyer on redesigning Elephant Tracks, a GC tracing tool for Java programs. 
-                    </p>
+                        Before I came here to Nagoya, I:</p>
+                        <ul>
+                            <li>
+                                worked with <a href="https://www.linkedin.com/in/vmurali15/">Murali Vijayaraghavan</a> at <a href="https://www.sifive.com/">SiFive</a>
+                                on the <a href="https://github.com/sifive/RiscvSpecFormal">Kami project</a>, towards the goal of verifying 
+                                a realistic RISC-V processor in Coq;</li>
+                            <li>was a research visitor here at Professor Jacques Garrigue's research group in summer 2018, working on the verification of
+                                succinct data structures in Coq;
+                            </li>
+                            <li>worked on the Elephant Tracks project with Professor <a href="https://www.cs.tufts.edu/~sguyer/">Samuel Z. Guyer</a> at the
+                                <a href="https://engineering.tufts.edu/cs/">Department of 
+                                Computer Science</a>, <a href="https://www.tufts.edu">Tufts University</a>, 
+                                where I also received my M.S. in Computer Science;
+                            </li>
+                            <li>
+                                studied at Tufts University as an undergraduate, majoring in computer science and <a href="https://ase.tufts.edu/ir/">international 
+                                relations</a>, and minoring in <a href="https://math.tufts.edu">mathematics</a>.
+                            </li>
+                        </ul>
                     <p>
                         For more details, please refer to my <a href="assets/cv.pdf">curriculum vitae</a> (last updated May 10, 2020).
                     </p>
@@ -178,25 +186,26 @@
                     <h5>Computer science:</h5>
                     <ul>
                         <li>Type inference for generalized algebraic data types (GADTs)</li>
-                        <li><a href="https://www.cl.cam.ac.uk/~sd601/thesis.pdf">Algebraic, compositional approach to subtyping</a></li>
-                        <li>Type theory for mathematical reasoning and <a href="https://homotopytypetheory.org/book/">homotopy type theory</a></li>
+                        <li>Bidirectional type checking and constraint-based type inference</li>
+                        <li>Type theory for mathematical reasoning, and <a href="https://homotopytypetheory.org/book/">homotopy type theory</a></li>
                         <li>Formalizing mathematics and computational structures in the <a href="https://coq.inria.fr">Coq</a> proof assistant</li>
                     </ul>
                     <h5>Mathematics:</h5>
                     <ul>
                         <li>Topos theory and categorical logic</li>
-                        <li>Algebraic topology</li>
-                        <li>Synthetic ("internal logic") approach to mathematics, particularly <a href="https://rawgit.com/iblech/internal-methods/master/notes.pdf">algebraic geometry</a></li>
+                        <li>Applications of category theory, especially in topology and geometry</li>
+                        <li>Synthetic ("internal logic") approach to mathematics, particularly <a href="https://cdn.jsdelivr.net/gh/iblech/internal-methods@master/notes.pdf">algebraic geometry</a></li>
                     </ul>
                     <h4>Current Projects</h4>
                     <ul>
                         <li>Specification and type inference for GADTs in OCaml</li>
-                        <li><a href="https://github.com/garrigue/certint">A certified implementation of ML with structural polymorphism</a>, and other modern type system features</li>
+                        <li>Extending our <a href="https://github.com/garrigue/certint">certified implementation of ML with structural polymorphism</a> with 
+                            other advanced type system features</li>
                     </ul>
                     <h4>Past Projects</h4>
                     <ul>
-                        <li>Complete verification of a practical 
-                            <a href="https://riscv.org/">RISC-V</a> processor in <a href="https://github.com/sifive/Kami">Kami</a>, 
+                        <li><a href="https://github.com/sifive/RiscvSpecFormal">Complete specification and verification</a> of a practical 
+                            <a href="https://riscv.org/">RISC-V</a> processor using <a href="https://github.com/sifive/Kami">Kami</a>, 
                             a DSL for designing formally verified hardware in Coq</li>
                         <li><a href="https://github.com/affeldt-aist/succinct">Succinct data structures in Coq</a></li>
                         <li><a href="https://github.com/ElephantTracksProject/et2-java">Elephant Tracks II</a>: extensible, efficient GC tracing</li>
@@ -257,6 +266,10 @@
                             of remote grading &amp; grade management. Put grades in YAML files, and get grade summaries &amp; grading emails sent out automatically.
                         </li>
                         <li>
+                            <a href="https://github.com/xuanruiqi/rebuild-initramfs-dracut-arch">initramfs rebuild script</a> for Arch Linux: a script that mimics 
+                            the behavior of <code>mkinitcpio -P</code> for <a href="https://dracut.wiki.kernel.org/index.php/Main_Page">Dracut</a> users.
+                        </li>
+                        <li>
                             <a href="https://github.com/xuanruiqi/dynruby">DynRuby</a>: a JavaScript tool to display 
                             ruby annotations on hover. You can find a demo <a href="https://www.xuanruiqi.com/dynruby/index.html">here</a>.
                         </li>
@@ -293,11 +306,16 @@
                         but I am fine with <i>he</i>.
                     </p>
                     <p>
-                        In an English-language setting, I often prefer to just be addressed as "Ray".  My Chinese name (Xuanrui Qi) is written 亓璇睿 in 
-                        Chinese characters, and in Mandarin it is pronounced /tɕʰi˧˥ ɕɥɛn˧˥ ɻwei̯˥˩/ (in IPA). I find the best approximation 
+                        In an English-language setting, I often prefer to just be addressed as "Ray"; however, I use my full name professionally.  
+                        My Chinese name (Xuanrui Qi) is written 亓璇睿 in Chinese characters (hanzi/kanji), and in Mandarin it is pronounced 
+                        /tɕʰi˧˥ ɕɥɛn˧˥ ɻwei̯˥˩/ (IPA) . I find the best approximation 
                         (modulo tones) to be the Japanese katakana: チー・シュエンルイ. If you can read Hanyu Pinyin or Bopomofo
-                        (Zhuyin Fuhao), it is pronounced [qí xuán ruì] or ㄒㄧˊ ㄏㄩㄢˊ ㄖㄨㄟˋ. By the way, even many native Chinese 
-                        speakers cannot read the Chinese characters in my name.
+                        (Zhuyin Fuhao), it is pronounced [qí xuán ruì] or [ㄒㄧˊ ㄏㄩㄢˊ ㄖㄨㄟˋ]. 
+                    </p>
+                    <p>
+                        By the way, even many native Chinese speakers cannot read the Chinese characters in my name, as my surname is an extremely rare one (by Chinese 
+                        standards). There are about 130,000 people with my surname, and it is believed that my family is descended from the family of 
+                        Confucius' wife, <a href="https://brownbeat.net/2019/11/biography-of-qiguan-shi-the-wife-of-confucius/">Lady Qiguan</a> (亓官氏).
                     </p>
                 </div>
             </main>

@@ -15,3 +15,7 @@ function offsetAnchor() {
   
   // Set the offset when entering page with hash present in the url
   window.setTimeout(offsetAnchor, 0);
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
