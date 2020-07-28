@@ -106,7 +106,7 @@
                             title="名古屋大学大学院多元数理科学研究科">Graduate
                         School of Mathematics, Nagoya University</a>, in Nagoya, Japan. I am interested in a 
                         wide range of topics in theoretical computer science and mathematics, most particularly those related to 
-                        typed lambda calculi, mathematical logic, and categorical structures. My research advisor is Professor
+                        type systems, mathematical logic, and category theory. My research advisor is Professor
                         <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, and my work is supported by the
                         COCTI (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference) project funded by the
                         <a href="https://tezos.foundation/">Tezos Foundation</a>.
@@ -193,12 +193,14 @@
                     <h3 class="title" id="research">Research</h3>
                     <h4>Main Interests</h4>
                     <p>
-                        I have a variety of research interests, both in theoretical computer science and (pure) mathematics.
+                        I have a variety of research interests, both in theoretical computer science and (pure) mathematics. Often, my interests 
+                        involve a structural and constructive point-of-view, and machine-checkable proofs in a proof assistant, such
+                        as <a href="https://coq.inria.fr/">Coq</a>, play an important role.
                     </p>
                     <h5>Computer science</h5>
                     <ul>
                         <li>Type inference for generalized algebraic data types (GADTs)</li>
-                        <li>Bidirectional type checking and constraint-based type inference</li>
+                        <li>Bidirectional type checking and constraint-based type inference algorithms</li>
                         <li>Type theory for mathematical reasoning, and <a href="https://homotopytypetheory.org/book/">homotopy type theory</a></li>
                         <li>Formalizing mathematics and computational structures in the <a href="https://coq.inria.fr">Coq</a> proof assistant</li>
                     </ul>
@@ -215,15 +217,17 @@
                     </ul>
                     <h4>Current Projects</h4>
                     <ul>
-                        <li>Specification and type inference for GADTs in OCaml</li>
-                        <li>Extending our <a href="https://github.com/garrigue/certint">certified implementation of ML with structural polymorphism</a> with 
-                            other advanced type system features</li>
+                        <li>COCTI (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference), more specifically:
+                            <ul>
+                                <li><a href="https://github.com/garrigue/certint/tree/ambivalent">Certified ML implementation with structural polymorphism and GADTs</a></li>
+                                <li>Specification for GADTs in OCaml</li>
+                            </ul>
+                        </li>
                     </ul>
                     <h4>Past Projects</h4>
                     <ul>
-                        <li><a href="https://github.com/sifive/RiscvSpecFormal">Complete specification and verification</a> of a practical 
-                            <a href="https://riscv.org/">RISC-V</a> processor using <a href="https://github.com/sifive/Kami">Kami</a>, 
-                            a DSL for designing formally verified hardware in Coq</li>
+                        <li>The <a href="https://github.com/sifive/Kami">Kami</a> project: <a href="https://github.com/sifive/RiscvSpecFormal">complete specification and verification</a> of a practical 
+                            <a href="https://riscv.org/">RISC-V</a> processor using Coq
                         <li><a href="https://github.com/affeldt-aist/succinct">Succinct data structures in Coq</a></li>
                         <li><a href="https://github.com/ElephantTracksProject/et2-java">Elephant Tracks II</a>: extensible, efficient GC tracing</li>
                         <li><a href="https://github.com/HeapVisCapstone">Java heap visualization</a></li>
