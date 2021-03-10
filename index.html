@@ -109,7 +109,7 @@
                         type systems, mathematical logic, and category theory. My research advisor is Professor
                         <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, and my work is supported by the
                         <a href="https://www.math.nagoya-u.ac.jp/~garrigue/cocti/">COCTI</a> (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference) 
-                        project, which is funded by the <a href="https://tezos.foundation/">Tezos Foundation</a>.
+                        project, funded by the <a href="https://tezos.foundation/">Tezos Foundation</a>.
                     </p>
 
                     <p>
@@ -185,53 +185,39 @@
 
                 <div class="title justify-content-between border-bottom mt-2 pt-1">
                     <h3 class="title" id="research">Research</h3>
-                    <h4>Main Interests</h4>
+                    <h4>Interests</h4>
                     <p>
-                        I have a variety of research interests, both in theoretical computer science and (pure) mathematics. Often, my interests 
-                        involve a structural and constructive point-of-view, and are inspired by ideas in mathematical logic and type theory. 
-                        Machine-checkable proofs in a proof assistant, such
-                        as <a href="https://coq.inria.fr/">Coq</a>, play an important role.
+                        Primarily, I am interested in category theory, especially categorical logic and topos theory. I am interested in the 
+                        "internal" view of category theory and other mathematics (particularly algebraic geometry), as well as the connections 
+                        with type theory (such as <a href="https://homotopytypetheory.org/book/">homotopy type theory</a>) and proof assistants 
+                        such as <a href="https://coq.inria.fr/">Coq</a>.
                     </p>
-                    <h5>Computer science</h5>
-                    <ul>
-                        <li>Generalized algebraic data types (GADTs) and their type inference</li>
-                        <li>Bidirectional type checking and constraint-based type inference algorithms for ML-like languages</li>
-                        <li>Formalizing mathematics in the <a href="https://coq.inria.fr">Coq</a> proof assistant</li>
-                        <li>Type theory for mathematical reasoning, and <a href="https://homotopytypetheory.org/book/">homotopy type theory</a></li>
-                    </ul>
-                    <h5>Mathematics</h5>
                     <p>
-                        I am especially interested in "abstract", or perhaps "Grothendieck-style" mathematics. I like to study and use categorical
-                        structures in the context of other fields of mathematics, most particularly algebraic geometry. Broadly speaking, the areas/lines 
-                        of research I am most interested in are:
+                        More broadly speaking, I also have an interest in programming language theory and logic in computer science, as well as 
+                        applications of category theory and algebraic geometry to computer science, in general.
+                        A lot of my research involve working with and coding in a proof assistant and/or dependently-typed programming language.
                     </p>
-                    <ul>
-                        <li>Topos theory and categorical logic</li>
-                        <li>Synthetic ("internal logic") approach to mathematics, particularly <a href="https://cdn.jsdelivr.net/gh/iblech/internal-methods@master/notes.pdf">algebraic geometry</a></li>
-                        <li>Modern algebraic geometry in general, especially parts that use heavily categorical techniques</li>
-                    </ul>
                     <h4>Current Projects</h4>
-                    <ul>
-                        <li>COCTI (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference), more specifically:
-                            <ul>
-                                <li><a href="https://github.com/COCTI/certint-amb">Certified ML implementation with structural polymorphism and GADTs</a></li>
-                                <li>Specification for and soundness of GADTs in OCaml</li>
-                            </ul>
-                        </li>
-                        <li><a href="https://www.xuanruiqi.com/algebraic-geometry/">The Coq/SSReflect/MathComp algebraic geometry project</a>:
-                            <ul>
-                                <li><a href="https://github.com/xuanruiqi/categories">Category theory</a></li>
-                                <li><a href="https://github.com/xuanruiqi/commalg">Commutative algebra</a></li>
-                            </ul>
-                            <p>
-                                Starting from what is already done in the Coq <a href="https://math-comp.github.io/">Mathematical Components</a> library, I build the
-                                necessary building blocks required to develop modern algebraic geometry. Currently, I am focused on the tools required to define a 
-                                scheme, the main subject of study in (Grothendieck's) algebraic geometry.
-                                This project is still in a nascent stage, and current development effors are highly experimental. However, I would love to have some 
-                                collaborators, and I am very open to discussions!
-                            </p>
-                        </li>
-                    </ul>
+                    <h5><a href="https://www.math.nagoya-u.ac.jp/~garrigue/cocti/index.html">COCTI (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference)</a></h5>
+                    <p>
+                        I am mainly working (with Jacques Garrigue) on an expressive core language for OCaml, supporting structural polymorphism and
+                        type-level equality witnesses. This core language is expressive enough to encode most of modern OCaml (except for
+                        the imperative part and the module language) without much hassle. We aim to develop a mechanized specification 
+                        and semantics for this core language, and prove the soundness and principality of this mini-OCaml.
+                    </p>
+                    <p>
+                        You can find our Coq development <a href="https://github.com/COCTI/certint-amb">here</a>, or read our <a href="assets/coqpl21.pdf">brief report</a> on this 
+                        project.
+                    </p>
+
+                    <h5><a href="https://www.xuanruiqi.com/algebraic-geometry/">The Coq/SSReflect/MathComp algebraic structures project</a></h5>
+                    <p>
+                        Starting from what is already done in the Coq <a href="https://math-comp.github.io/">Mathematical Components</a> library, I build the
+                        necessary building blocks required to develop modern algebraic geometry, commutative algebra, and homological algebra. Currently, 
+                        I am focused on developing basic categorical notions, as well as some basic theorems in commutative algebra.
+                        This project is still in a nascent stage, and current development effors are highly experimental. However, I would love to have some 
+                        collaborators, and I am very open to discussions!
+                    </p>
                     <h4>Past Projects</h4>
                     <ul>
                         <li>The <a href="https://github.com/sifive/Kami">Kami</a> project: <a href="https://github.com/sifive/RiscvSpecFormal">complete specification and verification</a> of a practical 
@@ -297,7 +283,12 @@
                     <ul>
                         <li>
                             the <a href="https://github.com/xuanruiqi/ruby-alpm">alpm</a> Gem, currently under development. This is a Ruby binding to libalpm, 
-                            the Arch Linux package management library.
+                            the Arch Linux package management library;
+                        </li>
+                        <li>
+                            <a href="https://github.com/xuanruiqi/rebuild-initramfs-dracut-arch">rebuild-initramfs</a>: a 
+                            script that mimics <code>mkinitcpio</code> presets for <a href="https://dracut.wiki.kernel.org/index.php/Main_Page">Dracut</a> users
+                            on Arch Linux. It is available <a href="https://aur.archlinux.org/packages/rebuild-initramfs-dracut/">on the AUR</a>.
                         </li>
                     </ul>
                     <p>
@@ -306,12 +297,8 @@
                     </p>
                     <ul>
                         <li>
-                            <a href="https://github.com/xuanruiqi/grading-tool">grading tool</a> (currently unnamed): a set of scripts to help automate the task 
+                            <a href="https://github.com/xuanruiqi/grading-tool">grading tool</a> (currently unnamed): a set of Ruby scripts to help automate the task 
                             of remote grading &amp; grade management. Put grades in YAML files, and get grade summaries &amp; grading emails sent out automatically.
-                        </li>
-                        <li>
-                            <a href="https://github.com/xuanruiqi/rebuild-initramfs-dracut-arch">initramfs rebuild script</a> for Arch Linux: a script that mimics 
-                            the behavior of <code>mkinitcpio -P</code> for <a href="https://dracut.wiki.kernel.org/index.php/Main_Page">Dracut</a> users.
                         </li>
                         <li>
                             <a href="https://github.com/xuanruiqi/dynruby">DynRuby</a>: a JavaScript tool to display 
