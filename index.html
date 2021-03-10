@@ -7,45 +7,41 @@
     <meta name="description" content="">
     <meta name="author" content="Xuanrui Qi">
     <title>Xuanrui Qi</title>
-
-
     <link href="./styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-sm-expand navbar-md-expand navbar-dark fixed-top bg-primary flex-md-nowrap p-0">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Xuanrui Qi</a>
-        </div>
+    <header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
+        <a class="navbar-brand title" href="#">Xuanrui Qi</a>
         <button class="navbar-toggler d-block d-lg-none d-xl-none" 
                     type="button" data-toggle="collapse" data-target="#spNav" aria-controls="navbarToggleExternalContent" 
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
         </button>     
-            <div class="collapse navbar-collapse justify-content-end" id="spNav">
-                <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item nav-item-sp">
-                        <a class="nav-link" href="https://blog.xuanruiqi.com">Blog</a>
-                    </li>
-                    <li class="nav-item nav-item-sp">
-                        <a class="nav-link" href="linux.html">Linux</a>
-                    </li>
-                    <li class="nav-item nav-item-sp">
-                        <a class="nav-link" href="writing.html">Notes &amp; Technical Writing</a>
-                    </li>
-                    <li class="nav-item nav-item-sp">
-                        <a class="nav-link" href="https://github.com/xuanruiqi">Code (GitHub)</a>
-                    </li>
-                    <li class="nav-item nav-item-sp">
-                        <a class="nav-link" href="ja.html">in Japanese (日本語)</a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
+        <div class="collapse navbar-collapse justify-content-end" id="spNav">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item nav-item-sp">
+                    <a class="nav-link" href="https://blog.xuanruiqi.com">Blog</a>
+                </li>
+                <li class="nav-item nav-item-sp">
+                    <a class="nav-link" href="linux.html">Linux</a>
+                </li>
+                <li class="nav-item nav-item-sp">
+                    <a class="nav-link" href="writing.html">Notes &amp; Technical Writing</a>
+                </li>
+                <li class="nav-item nav-item-sp">
+                    <a class="nav-link" href="https://github.com/xuanruiqi">Code (GitHub)</a>
+                </li>
+                <li class="nav-item nav-item-sp">
+                    <a class="nav-link" href="ja.html">in Japanese (日本語)</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-lg-2 d-none d-lg-block bg-light sidebar">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -98,15 +94,18 @@
             </nav>
 
 
-            <main role="main" class="col-lg-8 ml-sm-auto ml-md-auto col-lg-9 px-4">
-                <div class="justify-content-between align-items-center pt-4 border-bottom">
+            <main role="main" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-1 mt-1 pb-1 mb-1 border-bottom">
                     <h2 class="title" id="intro">Xuanrui Qi</h2>
+                </div>
+                <div class="justify-content-between align-items-center pt-3 border-bottom">
+                    
                     <p>
                         I am a graduate student at the <a href="https://www.math.nagoya-u.ac.jp/" data-toggle="tooltip" data-placement="bottom"
                             title="名古屋大学大学院多元数理科学研究科">Graduate
                         School of Mathematics, Nagoya University</a>, in Nagoya, Japan. I am interested in a 
                         wide range of topics in theoretical computer science and mathematics, most particularly those related to 
-                        type systems, mathematical logic, and category theory. My research advisor is Professor
+                        category theory, type theory, programming language theory, etc. My research advisor is Professor
                         <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, and my work is supported by the
                         <a href="https://www.math.nagoya-u.ac.jp/~garrigue/cocti/">COCTI</a> (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference) 
                         project, funded by the <a href="https://tezos.foundation/">Tezos Foundation</a>.
@@ -155,8 +154,7 @@
                     <p>
                         <b>Address:</b> Graduate School of Mathematics, Nagoya University, Furo-cho, Chikusa-ku, Nagoya, Aichi, Japan 464-8602<br>
                         <b>E-mail:</b> <a href="mailto:me@xuanruiqi.com">me@xuanruiqi.com</a> (general use), 
-                        <a href="mailto:xuanrui@nagoya-u.jp">xuanrui@nagoya-u.jp</a> (for research-related &amp; academic
-                        communication)<br>
+                        <a href="mailto:xuanrui@nagoya-u.jp">xuanrui@nagoya-u.jp</a> (if you are a researcher or at an academic institution)<br>
                         <b>ORCID: </b> <a href="https://orcid.org/0000-0002-2032-1552">0000-0002-2032-1552</a><br>
                         <b>Twitter:</b> <a href="https://twitter.com/xuanruirqi">@xuanruirqi</a><br>
                         <b>GitHub:</b> <a href="https://github.com/xuanruiqi">xuanruiqi</a><br>
@@ -168,17 +166,15 @@
                 <div class="justify-content-between border-bottom mt-2 pt-1">
                     <h3 class="title" id="recent">Recent Activities</h3>
                     <ul>
-                        <li>October 2020: <a href="#coqpl21">Towards a Coq Specification for Generalized Algebraic Datatypes in OCaml</a> has been accepted to 
-                            <a href="https://popl21.sigplan.org/home/CoqPL-2021">CoqPL 2021</a>, and Jacques gave the talk online.</li>
+                        <li>March 2021: the video of our <a href="https://popl21.sigplan.org/home/CoqPL-2021">CoqPL 2021</a> talk is available
+                        <a href="https://www.youtube.com/watch?v=OaNGJAdw5M8">here</a>!</li>
+                        <li>January 2021: attended <a href="https://popl21.sigplan.org/">POPL 2021</a> online. Jacques gave our <a href="#coqpl21">talk</a> 
+                        at the CoqPL 2021 workshop.</li>
+                        <li>November 2020: <a href="#coqpl21">Towards a Coq Specification for Generalized Algebraic Datatypes in OCaml</a> has been accepted to 
+                            CoqPL 2021.</li>
                         <li>October 2020: new submission: Towards a Coq Specification for Generalized Algebraic Datatypes in OCaml, to 
                             CoqPL 2021.</li>
-                        <li>August 2020:I attended <a href="https://icfp20.sigplan.org/">ICFP 2020</a> online.</li> 
-                        <li>June-July 2020: I attended <a href="https://pldi20.sigplan.org/">PLDI 2020</a>, 
-                            <a href="https://ijcar2020.org/">IJCAR</a>/<a href="https://fscd2020.org/">FSCD</a> 2020 &amp; and
-                            <a href="https://lics.siglog.org/lics20/">LICS</a>/<a href="https://icalp2020.saarland-informatics-campus.de/">ICALP</a> 2020 
-                            virtually.</li>
-                        <li>Nov 18-19, 2019: I attended the <a href="https://akihisayamada.github.io/tpp2019/">15<sup>th</sup> TPP meeting</a>
-                            at the National Institute of Informatics in Tokyo.</li>
+                        <li>August 2020: I attended <a href="https://icfp20.sigplan.org/">ICFP 2020</a> online.</li>
                         </li>
                     </ul>
                 </div>
@@ -188,7 +184,7 @@
                     <h4>Interests</h4>
                     <p>
                         Primarily, I am interested in category theory, especially categorical logic and topos theory. I am interested in the 
-                        "internal" view of category theory and other mathematics (particularly algebraic geometry), as well as the connections 
+                        "internal logic", or "synthetic" view of category theory and other mathematics (particularly algebraic geometry), as well as the connections 
                         with type theory (such as <a href="https://homotopytypetheory.org/book/">homotopy type theory</a>) and proof assistants 
                         such as <a href="https://coq.inria.fr/">Coq</a>.
                     </p>
@@ -379,8 +375,6 @@
                     </div>
                 </div>
             </main>
-
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
