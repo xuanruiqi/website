@@ -13,8 +13,8 @@
 <body>
     <header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0">
         <a class="navbar-brand title" href="#">Xuanrui Qi</a>
-        <button class="navbar-toggler d-block d-lg-none d-xl-none" 
-                    type="button" data-toggle="collapse" data-target="#spNav" aria-controls="navbarToggleExternalContent" 
+        <button class="navbar-toggler d-block d-md-none d-lg-none d-xl-none" 
+                    type="button" data-bs-toggle="collapse" data-bs-target="#spNav" aria-controls="navbarToggleExternalContent" 
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
         </button>     
@@ -165,10 +165,10 @@
                 <div class="justify-content-between border-bottom mt-2 pt-1">
                     <h3 class="title" id="recent">Recent Activities</h3>
                     <ul>
-                        <li>March 2021: the video of our <a href="https://popl21.sigplan.org/home/CoqPL-2021">CoqPL 2021</a> talk is available
+                        <li>March 2021: the video of our <a href="#coqpl21">CoqPL 2021 talk</a> is available
                         <a href="https://www.youtube.com/watch?v=OaNGJAdw5M8">here</a>!</li>
                         <li>January 2021: attended <a href="https://popl21.sigplan.org/">POPL 2021</a> online. Jacques gave our <a href="#coqpl21">talk</a> 
-                        at the CoqPL 2021 workshop.</li>
+                        at the <a href="https://popl21.sigplan.org/home/CoqPL-2021">CoqPL 2021</a> workshop.</li>
                         <li>November 2020: <a href="#coqpl21">Towards a Coq Specification for Generalized Algebraic Datatypes in OCaml</a> has been accepted to 
                             CoqPL 2021.</li>
                         <li>October 2020: new submission: Towards a Coq Specification for Generalized Algebraic Datatypes in OCaml, to 
@@ -193,25 +193,30 @@
                         A lot of my research involve working with and coding in a proof assistant and/or dependently-typed programming language.
                     </p>
                     <h4>Current Projects</h4>
-                    <h5><a href="https://www.math.nagoya-u.ac.jp/~garrigue/cocti/index.html">COCTI (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference)</a></h5>
+                    <h5><a class="nounderline" href="https://www.math.nagoya-u.ac.jp/~garrigue/cocti/index.html">COCTI (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference)</a></h5>
                     <p>
-                        I am mainly working (with Jacques Garrigue) on an expressive core language for OCaml, supporting structural polymorphism and
+                        I am mainly working (with Jacques Garrigue) on designing an expressive core language for OCaml, with formalized 
+                        semantics and typing rules, that supports structural polymorphism and
                         type-level equality witnesses. This core language is expressive enough to encode most of modern OCaml (except for
                         the imperative part and the module language) without much hassle. We aim to develop a mechanized specification 
-                        and semantics for this core language, and prove the soundness and principality of this mini-OCaml.
+                        and semantics for this core language, and prove the soundness of and principality of type inference for this mini-OCaml.
                     </p>
                     <p>
                         You can find our Coq development <a href="https://github.com/COCTI/certint-amb">here</a>, or read our <a href="assets/coqpl21.pdf">brief report</a> on this 
-                        project.
+                        project (presented at the CoqPL Workshop 2021).
                     </p>
 
-                    <h5><a href="https://www.xuanruiqi.com/algebraic-geometry/">The Coq/SSReflect/MathComp algebraic structures project</a></h5>
+                    <h5><a class="nounderline" href="https://www.xuanruiqi.com/algebraic-geometry/">The Coq/SSReflect/MathComp algebraic structures project</a></h5>
                     <p>
                         Starting from what is already done in the Coq <a href="https://math-comp.github.io/">Mathematical Components</a> library, I build the
                         necessary building blocks required to develop modern algebraic geometry, commutative algebra, and homological algebra. Currently, 
                         I am focused on developing basic categorical notions, as well as some basic theorems in commutative algebra.
                         This project is still in a nascent stage, and current development effors are highly experimental. However, I would love to have some 
                         collaborators, and I am very open to discussions!
+                    </p>
+                    <p>
+                        This is a very early-stage project, but I did give a short talk about it in November 2020. You can find the 
+                        <a href="assets/tpp2020.pdf">slides</a> here.
                     </p>
                     <h4>Past Projects</h4>
                     <ul>
@@ -226,7 +231,7 @@
                 <div class="title justify-content-between border-bottom mt-2 pt-1">
                     <h3 class="title" id="pubs">Publications &amp; Presentations</h3>
                     <h4>Papers &amp; Drafts</h4>
-                    <p id="itp19">
+                    <p class="title" id="itp19">
                         <b>Proving Tree Algorithms for Succinct Data Structures</b><br>
                         <a href="https://itp19.cecs.pdx.edu/">10<sup>th</sup> International Conference on Interactive Theorem Proving</a> (ITP 2019)<br>
                         Reynald Affeldt, Jacques Garrigue, <u>Xuanrui Qi</u>, and Kazunari Tanaka<br>
@@ -238,17 +243,24 @@
                     </p>
                     <p>
                         <b>Elephant Tracks II: Practical, Extensible Memory Tracing</b><br>
-                        Senior Honors Thesis, Tufts University, 2018<br>
+                        Senior Honors Thesis, Department of Computer Science, Tufts University, 2018<br>
                         Xuanrui (Ray) Qi<br>
                         <a href="assets/et2.pdf">[PDF]</a> <a href="assets/senior_thesis_defense.pdf">[Defense Slides]</a>
                         <a href="https://github.com/ElephantTracksProject/et2-java">[Code]</a>
                     </p>
                     <h4 id="talks">Talk Materials & Extended Abstracts</h4>
-                    <p id="coqpl21">
+                    <p class="title" id="coqpl21">
                         <b>Towards a Coq Specification for Generalized Algebraic Datatypes in OCaml</b><br>
                         The <a href="https://popl21.sigplan.org/home/CoqPL-2021">7<sup>th</sup> Workshop on Coq for Programming Languages</a> (CoqPL 2021)<br>
-                        Xuanrui Qi, Jacques Garrigue<br>
-                        <a href="assets/coqpl21.pdf">[Extended Abstract]</a>
+                        <u>Xuanrui Qi</u>, Jacques Garrigue<br>
+                        <a href="assets/coqpl21.pdf">[Extended Abstract]</a> <a href="assets/coqpl21_slides.pdf">[Slides]</a> 
+                        <a href="https://youtu.be/OaNGJAdw5M8">[Talk Video on YouTube]</a>
+                    </p>
+                    <p>
+                        <b>Rings, Categories and Schemes in Coq</b><br>
+                        The <a href="https://aabaa.github.io/tpp2020/">16<sup>th</sup> Theorem Proving and Provers Meeting</a> (TPP 2020)<br>
+                        Xuanrui Qi<br>
+                        <a href="assets/tpp2020.pdf">[Slides]</a>
                     </p>
                     <p id="coq19">
                         <b>Experience Report: Type-Driven Development of Certified Tree Algorithms in Coq</b><br>
@@ -257,7 +269,7 @@
                         <a href="assets/coqws2019.pdf">[Extended Abstract]</a> <a href="assets/coqws2019_long.pdf">[For On-Screen Reading]</a> <a href="assets/coqws2019_slides.pdf">[Slides]</a>
                     </p>
                     <p>
-                        <b class="paper-link" id="obt19">From Tactics to Structure Editors for Proofs.</b><br>
+                        <b class="paper-link" id="obt19">From Tactics to Structure Editors for Proofs</b><br>
                         <a href="https://popl19.sigplan.org/track/OBT-2019-papers">Off the Beaten Track 2019</a> (OBT 2019)<br>
                         Xuanrui (Ray) Qi<br>
                         <a href="assets/tactics_talk.pdf">[Extended Abstract]</a> <a href="assets/tactics_slides.pdf">[Slides]</a>

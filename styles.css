@@ -10677,12 +10677,6 @@ body {
   color: #18BC9C;
 }
 
-/*
- * Content
- */
-/* [role="main"] {
-  padding-top: 43px;
-} */
 @media (min-width: 768px) {
   [role=main] {
     padding-top: 10px;
@@ -10705,6 +10699,10 @@ body {
 
 .nav-item-sp {
   margin-left: 8%;
+}
+
+.nounderline {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
