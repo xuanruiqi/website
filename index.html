@@ -100,23 +100,27 @@
                 </div>
                 <div class="justify-content-between align-items-center pt-3 border-bottom"> 
                     <p>
-                        I am a Ph.D. student at the <a href="https://www.math.nagoya-u.ac.jp/" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        I am a first-year Ph.D. student at the <a href="https://www.math.nagoya-u.ac.jp/" data-bs-toggle="tooltip" data-bs-placement="bottom"
                             title="名古屋大学大学院多元数理科学研究科">Graduate
                         School of Mathematics, Nagoya University</a>, in Nagoya, Japan.
-                        My research advisor is Professor <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>, and I am supported by the
+                        My research advisor is Professor <a href="https://www.math.nagoya-u.ac.jp/~garrigue/">Jacques Garrigue</a>. I am supported by a fellowship from the
                         <a href="https://www.thers.ac.jp/" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            title="Tokai National Higher Education and Research System (東海国立大学機構)">THERS</a> Interdisciplinary Frontier Next Generation Researcher Project, as well as the
-                        <a href="https://www.math.nagoya-u.ac.jp/~garrigue/cocti/">COCTI</a> (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference) 
-                        project, which is funded by the <a href="https://tezos.foundation/">Tezos Foundation</a>. 
+                            title="Tokai National Higher Education and Research System (東海国立大学機構)">THERS</a> Interdisciplinary Frontier Next Generation Researcher Program,
+                            and by the <a href="https://tezos.foundation/">Tezos Foundation</a>'s
+                        <a href="https://www.math.nagoya-u.ac.jp/~garrigue/cocti/">COCTI</a> (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference)
+                        grant. 
                     </p>
                     <p>
-                        Currently, I'm mostly working on category theory, especially (1) category-theoretic machine learning and (2) categorical foundations of geometry.
-                        In general, I am interested in category theory applied to various areas of mathematics and computer science.
-                        I also work on some more practical topics in computer science and particularly programming languages, especially those related to OCaml
-                        type inference.
+                        I am a applied (and sometimes pure) mathematician, with a focus on category theory.
+                        My main research interest is in using category theory to solve problems in pure and applied mathematics, especially those involving a 
+                        geometric perspective.
+                        Currently, I am interested in two problems: (1) studying the geometry of deep learning using a category theoretic approach, and (2)
+                        building a categorical foundation of (especially algebraic) geometry.
+                        I am also interested in a wide range of other topics in mathematics and computer science, and in particular the formalization of mathematics
+                        and of OCaml type inference in the <a href="https://coq.inria.fr/">Coq proof assistant</a>.
                     </p>
                     <p>
-                        I completed an M.S. in mathematics in 2021, also at the Graduate School of Mathematics, Nagoya University. I wrote my thesis on the relationship
+                        I received an M.S. in mathematics in 2021, also from the Graduate School of Mathematics, Nagoya University. I wrote my thesis on the relationship
                         between toposes and the semantics of type theory.
                         Before that, I received a B.S. in computer science, with a double major in international relations and minor in 
                         mathematics, and an M.S. in computer science, both from <a href="https://www.tufts.edu">Tufts University</a> in the United States.
@@ -135,8 +139,8 @@
                         <b>ORCID: </b> <a href="https://orcid.org/0000-0002-2032-1552">0000-0002-2032-1552</a><br>
                         <b>Twitter:</b> <a href="https://twitter.com/xuanruirqi">@xuanruirqi</a><br>
                         <b>GitHub:</b> <a href="https://github.com/xuanruiqi">xuanruiqi</a><br>
-                        <b>Keybase:</b> <a href="https://keybase.io/xuanruiqi">xuanruiqi</a><br>
-                        <b>Public key (PGP):</b> <a href="assets/pubkey.asc">download</a> and import, or: <kbd>$ gpg --recv-keys 87F900026E06FBC8</kbd>
+                        <b>Public key (PGP):</b> available from a keyserver: <kbd>$ gpg --recv-keys 87F900026E06FBC8</kbd>. If that is not possible,
+                        you can also <a href="assets/pubkey.asc">download</a> and import the key.
                     </p>
                 </div>
 
@@ -160,15 +164,28 @@
                     <h3 class="title" id="research">Research</h3>
                     <h4>Interests</h4>
                     <ul>
-                        <li>applications of category theory to machine learning</li>
-                        <li>categorical foundations of geometry</li>
-                        <li>topos theory</li>
+                        <li>categorical perspective on geometric deep learning, and connections to physics &amp; dynamical systems</li>
+                        <li>categorical foundations of (algebraic) geometry</li>
                         <li>more general "categorified mathematics": &infin;-category theory, homotopy-coherent mathematics, higher geometry, etc.</li>
-                        <li>categorical logic &amp; type theory</li>
+                        <li>categorical logic &amp; toposes</li>
                         <li>computer-assisted theorem proving and formalized mathematics</li>
                         <li>more generally, category theory, type theory, and logic in computer science</li>
                     </ul>
-                    <h4>Current Projects</h4>
+                    <h4>Current Research</h4>
+                    <h5>A category theoretic approach to the geometry of deep learning</h5>
+                    <p>
+                        Many modern machine learning problems suffer from the curse of dimensionality, where the feature space can have very high dimensionality
+                        even for small inputs. However, in many learning problems, the input should not be considered "plain data" as in current approaches to
+                        deep learning, but instead objects with geometric structure. Therefore, deep learning ought to be considered from a geometric perspective.
+                        Machine learning is the study of solving estimation problems while respecting the structure and symmetry of the input data. Category theory
+                        is therefore the proper tool to study such problems; it is now an integral tool and framework in the study of geometry, and
+                        the geometry of deep learning should be no different. Moreover, I would like to explore the potential connections to dynamical systems and
+                        mathematical physics, particularly gauge theory/quantum field theory.
+                    </p>
+                    <p>
+                        This research project is supported by a fellowship from the THERS Interdisciplinary Frontier Next Generation Researcher Program, which is
+                        funded by the Japan Science and Technology Agency (JST)'s <a href="https://www.jst.go.jp/jisedai/en/index.html">SPRING</a> Program.
+                    </p>
                     <h5><a class="nounderline" href="https://www.math.nagoya-u.ac.jp/~garrigue/cocti/index.html">COCTI (<b>C</b>ertifiable <b>OC</b>aml <b>T</b>ype <b>I</b>nference)</a></h5>
                     <p>
                         I am mainly working (with Jacques Garrigue) on designing an expressive core language for OCaml, with formalized 
@@ -182,7 +199,7 @@
                         project (presented at the CoqPL Workshop 2021).
                     </p>
 
-                    <h5><a class="nounderline" href="https://www.xuanruiqi.com/algebraic-geometry/">The Coq/SSReflect/MathComp algebraic structures project</a></h5>
+                    <h5><a class="nounderline" href="https://www.xuanruiqi.com/algebraic-geometry/">Formalization of mathematics in Coq</a></h5>
                     <p>
                         Starting from what is already done in the Coq <a href="https://math-comp.github.io/">Mathematical Components</a> library, I build the
                         necessary building blocks required to develop modern algebraic geometry, commutative algebra, and homological algebra. Currently, 
@@ -191,8 +208,8 @@
                         collaborators, and I am very open to discussions!
                     </p>
                     <p>
-                        This is a very early-stage project, but I did give a short talk about it in November 2020. You can find the 
-                        <a href="assets/tpp2020.pdf">slides</a> here.
+                        This is a very early-stage project, but I did give short talks about it in November 2020 and 2021. You can find the 
+                        slides <a href="assets/tpp2020.pdf">here</a> and <a href="assets/tpp2021.pdf">here</a>.
                     </p>
                     <h4>Past Projects</h4>
                     <ul>
@@ -218,6 +235,12 @@
                         <a href="https://github.com/affeldt-aist/succinct">[Proofs]</a>
                     </p>
                     <h4 id="talks">Talk Materials & Extended Abstracts</h4>
+                    <p>
+                        <b>Rings, Categories and Schemes in Coq (II): Formalizing the Functor of Points in Coq</b><br>
+                        The <a href="https://t6s.github.io/tpp2021/">17<sup>th</sup> Theorem Proving and Provers Meeting</a> (TPP 2021)<br>
+                        Xuanrui Qi<br>
+                        <a href="assets/tpp2021.pdf">[Slides]</a>
+                    </p>
                     <p class="title" id="ml2021">
                         <b>Formalizing OCaml GADT Typing in Coq</b><br>
                         The <a href="https://icfp21.sigplan.org/home/mlfamilyworkshop-2021">ML Family Workshop 2021</a> (ML 2021)<br>
@@ -258,7 +281,7 @@
                     <h4>Theses</h4>
                     <p class="title" id="masters">
                         <b>Type Theory and the Logic of Toposes</b><br>
-                        Master's thesis, Graduate School of Mathematics, Nagoya University, 2021<br>
+                        Master's Thesis, Graduate School of Mathematics, Nagoya University, 2021<br>
                         Xuanrui Qi<br>
                         <a href="assets/masters_thesis.pdf">[PDF]</a> <a href="assets/masters_thesis_defense.pdf">[Defense Slides]</a>
                     </p>
